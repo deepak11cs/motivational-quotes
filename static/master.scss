@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    --themecolor: hotpink;
+  }
+  $fillcolor: var(--themecolor);
+  #wrapper{
+    max-height: auto;
+    width: 100vw;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: $fillcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button{
+    background-color: transparent;
+    display: block;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  #quote-box{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    max-width: 550px;
+    min-width: 450px;
+    border-radius: 7px;
+    padding: 50px;
+    box-shadow: 10px 10px 10px 0 #111;
+    color: $fillcolor;
+    z-index: 2;
+    #text{
+      font-size: 2em;
+      font-weight: 800;
+      height: auto;
+    }
+    #author{
+      text-align: right;
+      height: auto;
+      font-weight: 200;
+      font-size: 1.4em;
+      margin-top: 10px;
+    }
+    #footer{
+      display: flex;
+      margin-top: 20px;
+      flex-direction: row;
+      height: auto;
+      justify-content: space-between;
+      #tweet-quote{
+        i{
+          
+          background: $fillcolor;
+          color: white;
+          padding: 10px;
+          border-radius: 8px;
+        }
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+      #new-quote{
+        text-decoration: none;
+        background-color: $fillcolor;
+        color: white;
+        padding: 8px 20px;
+        border-radius: 8px;
+        opacity: 1;
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+    }
+  }
